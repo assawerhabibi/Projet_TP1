@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230308 02:17:33.704" rpa="false" schemaversion="3">
+<suite id="s1" name="Script Cv Assawer" source="c:\Users\HABIBI ASSAWER\Desktop\Projet_TP1\test_cases\script_cv_assawer.robot">
+<test id="s1-t1" name="Ouverture du navigateur" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230308 02:17:33.859" level="INFO">Opening browser 'chrome' to base url 'https://assawerhabibi.github.io/Localisateur_Web_Assawer/'.</msg>
+<status status="PASS" starttime="20230308 02:17:33.858" endtime="20230308 02:17:35.569"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230308 02:17:35.571" endtime="20230308 02:17:35.709"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 02:17:39.711" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 02:17:35.711" endtime="20230308 02:17:39.711"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:33.857" endtime="20230308 02:17:39.713"/>
+</test>
+<test id="s1-t2" name="Test de la strucrures de la page" line="17">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@title='Formation']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230308 02:17:39.717" level="INFO">Clicking link 'xpath://a[@title='Formation']'.</msg>
+<status status="PASS" starttime="20230308 02:17:39.715" endtime="20230308 02:17:39.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 02:17:43.772" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 02:17:39.771" endtime="20230308 02:17:43.772"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 02:17:43.774" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 02:17:43.773" endtime="20230308 02:17:43.781"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 02:17:46.783" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 02:17:43.782" endtime="20230308 02:17:46.783"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,-5000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 02:17:46.785" level="INFO">Executing JavaScript:
+window.scrollTo(0,-5000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 02:17:46.784" endtime="20230308 02:17:46.791"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 02:17:48.793" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230308 02:17:46.792" endtime="20230308 02:17:48.793"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 02:17:48.796" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 02:17:48.795" endtime="20230308 02:17:48.801"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 02:17:51.803" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230308 02:17:48.802" endtime="20230308 02:17:51.803"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230308 02:17:51.805" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230308 02:17:51.804" endtime="20230308 02:17:51.811"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230308 02:17:55.813" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230308 02:17:51.812" endtime="20230308 02:17:55.813"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:39.714" endtime="20230308 02:17:55.814"/>
+</test>
+<test id="s1-t3" name="capture de l'ecran" line="28">
+<kw name="capture de l'ecran">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>page1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230308 02:17:56.192" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="page1.png"&gt;&lt;img src="page1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230308 02:17:55.817" endtime="20230308 02:17:56.192"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:55.816" endtime="20230308 02:17:56.194"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:55.815" endtime="20230308 02:17:56.194"/>
+</test>
+<test id="s1-t4" name="verfier le titre de la page" line="30">
+<kw name="verfier le titre de la page">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>CV ASSAWER</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230308 02:17:56.204" level="INFO">Page title is 'CV ASSAWER'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.197" endtime="20230308 02:17:56.204"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.197" endtime="20230308 02:17:56.204"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.196" endtime="20230308 02:17:56.205"/>
+</test>
+<test id="s1-t5" name="verfier adresse url de la page" line="32">
+<kw name="verfier adresse url de la page">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://assawerhabibi.github.io/Localisateur_Web_Assawer/#education</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230308 02:17:56.216" level="INFO">Current location is 'https://assawerhabibi.github.io/Localisateur_Web_Assawer/#education'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.207" endtime="20230308 02:17:56.216"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.206" endtime="20230308 02:17:56.217"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.206" endtime="20230308 02:17:56.218"/>
+</test>
+<test id="s1-t6" name="verfier le reste des elements de la page" line="34">
+<kw name="verfier le reste des elements de la page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//h2[text()='References']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230308 02:17:56.233" level="INFO">Current page contains element 'xpath=//h2[text()='References']'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.221" endtime="20230308 02:17:56.234"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//h2[text()='EXPÉRIENCES PERTINANTES']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230308 02:17:56.254" level="INFO">Current page contains element 'xpath=//h2[text()='EXPÉRIENCES PERTINANTES']'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.234" endtime="20230308 02:17:56.254"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.220" endtime="20230308 02:17:56.254"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.219" endtime="20230308 02:17:56.256"/>
+</test>
+<test id="s1-t7" name="verfier des liens dans la page" line="36">
+<kw name="verfier les liens dans la page">
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[@title='Compétences']</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230308 02:17:56.282" level="INFO">Current page contains link 'xpath=//a[@title='Compétences']'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.260" endtime="20230308 02:17:56.282"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[@title='Formation']</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230308 02:17:56.294" level="INFO">Current page contains link 'xpath=//a[@title='Formation']'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.282" endtime="20230308 02:17:56.295"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.260" endtime="20230308 02:17:56.295"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.259" endtime="20230308 02:17:56.297"/>
+</test>
+<test id="s1-t8" name="verfier le lien vers le pdf" line="38">
+<kw name="verfier le lien vers le pdf">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//a[text()='Download CV']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230308 02:17:56.310" level="INFO">Current page contains element 'xpath=//a[text()='Download CV']'.</msg>
+<status status="PASS" starttime="20230308 02:17:56.298" endtime="20230308 02:17:56.310"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.298" endtime="20230308 02:17:56.310"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.298" endtime="20230308 02:17:56.315"/>
+</test>
+<test id="s1-t9" name="Fermer le navigateur" line="42">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230308 02:17:56.317" endtime="20230308 02:17:58.508"/>
+</kw>
+<status status="PASS" starttime="20230308 02:17:56.317" endtime="20230308 02:17:58.509"/>
+</test>
+<doc>documentation CV_Assawer</doc>
+<status status="PASS" starttime="20230308 02:17:33.708" endtime="20230308 02:17:58.511"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="0" skip="0" id="s1" name="Script Cv Assawer">Script Cv Assawer</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
